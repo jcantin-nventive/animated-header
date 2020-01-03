@@ -7,8 +7,12 @@
 	  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	  mc:Ignorable="d">
 
+	<Page.DataContext>
+		<local:MyViewModel />
+	</Page.DataContext>
+
 	<Grid>
-		<u:AnimatedHeaderControl RelativeOffset="{Binding Parent[RelativeOffset], Mode=TwoWay}">
+		<u:AnimatedHeaderControl RelativeOffset="{Binding RelativeOffset, Mode=TwoWay}">
 			<ScrollViewer>
 
 				<StackPanel>
