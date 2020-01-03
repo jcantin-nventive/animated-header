@@ -11,11 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHeaderTest.iOS", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHeaderTest.UWP", "AnimatedHeaderTest\AnimatedHeaderTest.UWP\AnimatedHeaderTest.UWP.csproj", "{8F765E85-AA50-4EE2-9788-72DD2F8CA904}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHeaderTest.Wasm", "AnimatedHeaderTest\AnimatedHeaderTest.Wasm\AnimatedHeaderTest.Wasm.csproj", "{90E5D645-DFBB-4073-BACE-CDF03F776408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimatedHeaderTest.Wasm", "AnimatedHeaderTest\AnimatedHeaderTest.Wasm\AnimatedHeaderTest.Wasm.csproj", "{90E5D645-DFBB-4073-BACE-CDF03F776408}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AnimatedHeaderTest\AnimatedHeaderTest.Shared\AnimatedHeaderTest.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		AnimatedHeaderTest\AnimatedHeaderTest.Shared\AnimatedHeaderTest.Shared.projitems*{7f7eee5c-dc82-4bf2-8dde-74255977b82c}*SharedItemsImports = 4
+		AnimatedHeaderTest\AnimatedHeaderTest.Shared\AnimatedHeaderTest.Shared.projitems*{8f765e85-aa50-4ee2-9788-72dd2f8ca904}*SharedItemsImports = 4
+		AnimatedHeaderTest\AnimatedHeaderTest.Shared\AnimatedHeaderTest.Shared.projitems*{c7d5a2ed-ada6-4dee-8769-5f243c2204d2}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
