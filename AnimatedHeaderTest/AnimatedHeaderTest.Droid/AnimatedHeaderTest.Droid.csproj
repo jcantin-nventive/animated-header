@@ -65,7 +65,7 @@
       <Version>3.8.0</Version>
     </PackageReference>
     <PackageReference Include="Uno.UI">
-      <Version>1.46.1-proj-caa-national-1-0.2273</Version>
+      <Version>2.1.0-dev.543</Version>
     </PackageReference>
     <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.32" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.1" />
