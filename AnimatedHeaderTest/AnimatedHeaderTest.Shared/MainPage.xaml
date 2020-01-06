@@ -12,25 +12,35 @@
 	</Page.DataContext>
 
 	<Grid>
-		<ContentControl Content="{Binding}">
-			<ContentControl.ContentTemplate>
-				<DataTemplate>
-					<u:AnimatedHeaderControl RelativeOffset="{Binding RelativeOffset, Mode=TwoWay}">
-						<ScrollViewer>
-							<StackPanel>
-								<TextBlock Text="{Binding RelativeOffset}"
-										   Margin="0,30,0,0"
-										   u:AnimatedHeaderControl.IsMasthead="True" />
+		<ScrollViewer>
+			<StackPanel>
+				<!-- Content section -->
+				<StackPanel Margin="16,16,16,0">
 
-								<Border Height="1000"
-										Width="100"
-										Background="Pink" />
-							</StackPanel>
+					<!-- Title -->
+					<TextBlock Text="{Binding Parent[ClubTitle]}" />
 
-						</ScrollViewer>
-					</u:AnimatedHeaderControl>
-				</DataTemplate>
-			</ContentControl.ContentTemplate>
-		</ContentControl>
+					<!-- Summary -->
+					<TextBlock Text="{Binding Data.Member.Summary}"
+							   Margin="0,16,0,0" />
+
+					<!-- Content -->
+					<!-- TODO (Task #170958) : Use a HTML view -->
+					<TextBlock Text="{Binding Data.Member.Content}"
+							   Margin="0,24" />
+					<Border Height="600"
+							Width="100"
+							Background="Pink" />
+
+					<!-- Question label -->
+					<TextBlock Text="Questions on this or any other automotive question?" />
+
+					<!-- External navigation button -->
+					<Button Command="{Binding Parent[OpenExternalLink]}"
+							Content="Find out more online"
+							Margin="0,16" />
+				</StackPanel>
+			</StackPanel>
+		</ScrollViewer>
 	</Grid>
 </Page>
