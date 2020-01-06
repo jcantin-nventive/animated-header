@@ -13,22 +13,24 @@
 
 	<Grid>
 		<ContentControl Content="{Binding}">
-			<DataTemplate>
-				<u:AnimatedHeaderControl RelativeOffset="{Binding RelativeOffset, Mode=TwoWay}">
-					<ScrollViewer>
+			<ContentControl.ContentTemplate>
+				<DataTemplate>
+					<u:AnimatedHeaderControl RelativeOffset="{Binding RelativeOffset, Mode=TwoWay}">
+						<ScrollViewer>
+							<StackPanel>
+								<TextBlock Text="{Binding RelativeOffset}"
+										   Margin="0,30,0,0"
+										   u:AnimatedHeaderControl.IsMasthead="True" />
 
-						<StackPanel>
-							<TextBlock Text="hello"
-									   u:AnimatedHeaderControl.IsMasthead="True" />
+								<Border Height="1000"
+										Width="100"
+										Background="Pink" />
+							</StackPanel>
 
-							<Border Height="1000"
-									Width="100"
-									Background="Pink" />
-						</StackPanel>
-
-					</ScrollViewer>
-				</u:AnimatedHeaderControl>
-			</DataTemplate>
+						</ScrollViewer>
+					</u:AnimatedHeaderControl>
+				</DataTemplate>
+			</ContentControl.ContentTemplate>
 		</ContentControl>
 	</Grid>
 </Page>
